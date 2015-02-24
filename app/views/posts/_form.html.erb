@@ -14,7 +14,13 @@
       <%= f.label :description %>
       <%= f.text_area :description, rows: 5 %>
     </div>
+    
+    <label class='checkbox inline'>
+      <%= collection_check_boxes :post, :category_ids, Category.all, :id, :name %>
+    </label>
+    <br/>
     <%= f.submit(@post.new_record? ? 'Create Post': 'Update Post', class: 'btn btn-primary') %>
   <% end %>
 </div>
+
 

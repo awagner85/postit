@@ -22,6 +22,9 @@
   padding-left: 0px;
 }
 
+.navbar .nav > ul > li {
+  float: left;
+}
 .quiet {
   color: #ababab;
 }
@@ -41,4 +44,3 @@ div.nav_item {
 div.comment_votes {
   padding: 10px;
 }
-
