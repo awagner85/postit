@@ -45,7 +45,7 @@ class UsersController < ApplicationController
   
   def require_same_user 
     if current_user != @user
-      flash[:notice] = "Can't do that."
+      flash[:error] = "Can't do that."
       redirect_to root_path
     end
   end
